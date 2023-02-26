@@ -1,0 +1,33 @@
+@keyframes from-above {
+   0% {
+      transform: translateY(-100%);
+   }
+
+   100% {
+      transform: translateY(0);
+   }
+}
+@keyframes from-right {
+   0% {
+      transform: translateX(100%);
+   }
+
+   100% {
+      transform: translateX(0);
+   }
+}
+
+@keyframes rotateIcon {
+   0% {
+      transform: rotate(0);
+   }
+   25% {
+      transform: rotate(-45deg);
+   }
+   50% {
+      transform: rotate(180deg);
+   }
+   100% {
+      transform: rotate(0deg);
+   }
+}

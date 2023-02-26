@@ -1,0 +1,122 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+
+.nav {
+   min-height: 70px;
+   text-transform: capitalize;
+   justify-content: space-between;
+   color: black;
+   align-items: center;
+   z-index: 999;
+   background: $background-primary;
+   width: 100%;
+   position: relative;
+   transition: all 0.3 ease;
+
+   .logo {
+      font-size: 1.9rem;
+
+      span {
+         color: $third-color;
+      }
+   }
+
+   .nav-links {
+      gap: 4.9rem;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      z-index: 999;
+
+      span {
+         color: $gray-md;
+         padding: 0.9rem 0;
+      }
+
+      span:hover {
+         color: $primary-color;
+      }
+   }
+
+   .btn-register {
+      background: $fourth-color;
+      color: $background-primary;
+      padding: 7px 17px;
+      font-weight: 500;
+      border-radius: 5px;
+
+      &:hover {
+         //  color: $secondary-color;
+         background: $primary-color;
+      }
+
+      &-mobile {
+         display: none;
+      }
+   }
+
+   .btn-bars {
+      display: none;
+   }
+}
+
+@media (max-width: 820px) {
+   .nav {
+      max-width: 90%;
+      margin: 0 auto;
+      flex-direction: row-reverse;
+      &-links {
+         display: block;
+         position: absolute;
+         justify-content: center;
+         top: 0;
+         left: 0;
+         flex-direction: column;
+         background: (rgba($color: #fff, $alpha: 0.9));
+         min-height: 440px;
+         min-width: 40%;
+         color: $gray-md;
+         font-size: 1.3rem;
+         line-height: 4rem;
+         transform: translateX(-100%);
+         backdrop-filter: blur(0.9);
+
+         &.show {
+            transform: translateX(0);
+         }
+
+         span {
+            min-width: 100%;
+         }
+      }
+
+      .btn-register {
+         display: none;
+
+         &-mobile {
+            display: block;
+            color: $background-primary;
+            background-color: $third-color;
+            padding: 0.8rem 1.8rem;
+            border-radius: 5px;
+         }
+      }
+
+      .btn-bars {
+         display: block;
+         font-size: 2rem;
+         color: $third-color;
+         align-items: center;
+         margin: 1rem 0;
+      }
+   }
+}
+
+@media (max-width: 599px) {
+   .nav-links {
+      width: 90%;
+      height: calc(100vh - 6rem);
+      border-radius: 0 0 150px 0;
+   }
+}

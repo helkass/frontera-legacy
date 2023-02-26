@@ -1,0 +1,56 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+
+.service-main {
+   padding: 3rem 0;
+   @media (max-width: 599px) {
+      flex-direction: column;
+   }
+
+   overflow: hidden;
+
+   &-left,
+   &-right {
+      min-width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+   }
+
+   &-left {
+      justify-content: center;
+
+      img {
+         max-width: 90%;
+         object-fit: cover;
+      }
+   }
+
+   &-right {
+      text-align: left;
+      margin-top: 15px;
+   }
+
+   &-dropdowns {
+      row-gap: 10px;
+      display: flex;
+      flex-direction: column;
+
+      &-item {
+         display: flex;
+         gap: 15px;
+         align-items: center;
+      }
+
+      &-icon {
+         background: $secondary-color;
+         color: $fourth-color;
+         padding: 3px;
+         border-radius: 100%;
+         max-width: max-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+   }
+}

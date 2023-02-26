@@ -1,0 +1,33 @@
+@import "../../../styles//config";
+@import "../../../styles//utilities";
+
+.modal {
+   position: absolute;
+   border: 1px solid $primary-color;
+   border-radius: 20px;
+   min-width: 300px;
+   width: 50%;
+   min-height: 300px;
+   padding: 1.7rem;
+   top: 70%;
+   right: 20%;
+   transition: all 0.3s ease;
+   background: $background-primary;
+   display: block;
+   transform: translateY(-450%);
+}
+
+@media (max-width: 820px) {
+   .modal {
+      right: -120%;
+      top: 20%;
+   }
+}
+
+@media (max-width: 590px) {
+   .modal {
+      right: -5%;
+      top: 5%;
+      height: 430px;
+   }
+}

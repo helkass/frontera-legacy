@@ -1,0 +1,96 @@
+@import "./config";
+
+.container {
+   max-width: 1200px;
+   margin: auto;
+   width: calc(100% - 20px);
+}
+
+.flex {
+   display: flex;
+   align-items: center;
+}
+
+.title {
+   color: $third-color;
+   font-size: 2rem;
+   text-transform: capitalize;
+   line-height: 1.5rem;
+
+   @media (max-width: 599px) {
+      line-height: 1.2;
+      font-size: 1.7rem;
+   }
+}
+
+.subtitle {
+   color: inherit;
+   font-size: 1.6rem;
+   line-height: 3.3rem;
+   font-weight: 600;
+
+   @media (max-width: 599px) {
+      line-height: 1.2;
+      font-size: 1.2rem;
+   }
+}
+
+.card {
+   max-width: 280px;
+   transition: all 0.3 ease;
+   border-radius: 15px;
+   background: $background-primary;
+   display: flex;
+   flex-direction: column;
+   gap: 7px;
+   position: relative;
+   padding: 15px;
+   overflow: hidden;
+   line-height: 1.1;
+   box-shadow: rgba(149, 157, 165, 0.1) 0px 6px 8px;
+
+   &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   }
+
+   &-title {
+      font-size: 1.4rem;
+      color: $fourth-color;
+
+      @media (max-width: 599px) {
+         font-size: 1.1rem;
+      }
+   }
+
+   &-subtitle {
+      font-size: 1.1rem;
+   }
+
+   &-icon {
+      max-width: 40px;
+      max-height: 40px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border-radius: 100%;
+      padding: 6px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      @media (max-width: 599px) {
+         width: 30px;
+         height: 30px;
+      }
+   }
+}
+
+.shadow {
+   &-sm {
+      box-shadow: rgba(149, 157, 165, 0.1) 0px 6px 8px;
+   }
+   &-md {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   }
+   &-xl {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   }
+}
