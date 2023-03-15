@@ -13,6 +13,10 @@ const Hero = () => {
             <h1>
                your best managing platform <span>bussiness</span>
             </h1>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+               eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
             <button>get free consulte</button>
          </div>
          <RightImageContent />

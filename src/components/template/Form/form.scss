@@ -1,0 +1,161 @@
+@import "../../../styles/config";
+@import "../../../styles/utilities";
+
+.form-main {
+   min-height: calc(100vh - 20px);
+   display: flex;
+   gap: 20px;
+}
+
+.form--content--left {
+   min-width: 35%;
+   background: $secondary-color;
+   padding: 2rem;
+   line-height: 1.2rem;
+
+   .heading-title {
+      font-size: 2.1rem;
+      margin: 2.2rem 0;
+   }
+
+   p {
+      color: $gray-sm;
+      max-width: 90%;
+   }
+
+   .form--left--images {
+      position: relative;
+      height: 60vh;
+      margin-top: 1.6rem;
+
+      .form--image {
+         width: 120px;
+         height: 120px;
+         object-fit: cover;
+         position: absolute;
+         border-radius: 16px;
+         background: white;
+         padding: 12px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+      .image--1 {
+         top: 10%;
+         left: 50%;
+      }
+      .image--2 {
+         top: 30%;
+         left: 25%;
+         z-index: 1;
+      }
+      .image--3 {
+         bottom: 10%;
+         left: 50%;
+      }
+   }
+}
+
+.form--content--right {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 40px;
+
+   .content--right--main {
+      border-radius: 16px;
+      padding: 1.2rem;
+      line-height: 1.2rem;
+
+      h1 {
+         font-size: 1.8rem;
+         margin-bottom: 20px;
+      }
+
+      .form--subtitle {
+         color: $gray-sm;
+         font-size: 0.9rem;
+      }
+   }
+
+   .form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .form-policy {
+         display: flex;
+         gap: 10px;
+         align-items: center;
+      }
+
+      .button--auth {
+         background: $third-color;
+         padding: 9px 15px;
+         margin: 10px 0;
+         border-radius: 7px;
+         width: max-content;
+         color: white;
+      }
+   }
+
+   .form--other {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $gray-sm;
+      font-size: 0.9rem;
+      gap: 40px;
+      margin: 20px;
+   }
+}
+
+@media (max-width: 820px) {
+   .form-main {
+      flex-direction: column;
+      padding: 35px;
+   }
+
+   .form--content--left {
+      height: 150px;
+      border-radius: 12px;
+      display: flex;
+      padding: 0.5rem 1rem;
+
+      .heading-title {
+         margin-top: 1rem;
+         margin-bottom: 1.2rem;
+      }
+
+      .left-sub {
+         font-size: 0.9rem;
+      }
+
+      .form--left--images {
+         height: 100%;
+         margin: 0;
+         min-width: 50%;
+
+         .form--image {
+            height: 50px;
+            width: 50px;
+         }
+
+         .image--1 {
+            top: 2%;
+         }
+
+         .image--3 {
+            bottom: 2%;
+         }
+      }
+   }
+}
+
+@media (max-width: 599px) {
+   .form-main {
+      padding: 20px;
+   }
+}

@@ -11,7 +11,8 @@
    padding: 1.7rem;
    top: 70%;
    right: 20%;
-   transition: all 0.3s ease;
+   transition: all 0.5s ease;
+   transition-delay: 0.3s;
    background: $background-primary;
    display: block;
    transform: translateY(-450%);
@@ -26,7 +27,7 @@
 
 @media (max-width: 590px) {
    .modal {
-      right: -5%;
+      right: -10%;
       top: 5%;
       height: 430px;
    }

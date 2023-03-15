@@ -58,6 +58,7 @@
 
    .btn-bars {
       display: none;
+      height: max-content;
    }
 }
 
@@ -67,12 +68,14 @@
       margin: 0 auto;
       flex-direction: row-reverse;
       &-links {
-         display: block;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
          position: absolute;
          justify-content: center;
+         padding: 20px 0;
          top: 0;
          left: 0;
-         flex-direction: column;
          background: (rgba($color: #fff, $alpha: 0.9));
          min-height: 440px;
          min-width: 40%;
@@ -81,6 +84,7 @@
          line-height: 4rem;
          transform: translateX(-100%);
          backdrop-filter: blur(0.9);
+         -webkit-backdrop-filter: blur(0.9);
 
          &.show {
             transform: translateX(0);

@@ -85,7 +85,7 @@ const NavbarComponent = () => {
                      others
                   </span>
                </Link>
-               <Link to="/">
+               <Link to="/auth">
                   <button className="btn-register-mobile">Register</button>
                </Link>
                <button
@@ -98,7 +98,7 @@ const NavbarComponent = () => {
                   <p>modal {modalValue}</p>
                </Modal>
             </div>
-            <Link to="/">
+            <Link to="/auth">
                <button className="btn-register">Register</button>
             </Link>
             <button className="btn-bars" onClick={handleShowNavbar}>
